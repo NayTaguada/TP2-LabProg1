@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
 
@@ -9,6 +11,15 @@ typedef struct {
     int dni;
 
 }EPersona;
+
+typedef struct{
+
+    int menor18;
+    int de19a35;
+    int mayor35;
+
+}gEdades;
+
 
 /**
  * Obtiene el primer indice libre del array.
@@ -23,8 +34,26 @@ int obtenerEspacioLibre(EPersona lista[]);
  * @param dni el dni a ser buscado en el array.
  * @return el indice en donde se encuentra el elemento que coincide con el parametro dni
  */
-int buscarPorDni(EPersona lista[], int dni);
+//int buscarPorDni(EPersona lista[], int dni);
 
 void iniciarVector (EPersona inicio[]);
+
+void agregarPersona (EPersona inicio[],int personas);
+
+void borrarPersonas(EPersona inicio[], int personas);
+
+void listaxNombres(EPersona inicio[],char orden);
+
+gEdades personasGrupos(EPersona inicio[]);
+
+void graficoEdades(gEdades cPersonas);
+
+char vLargoDeString(EPersona inicio[],int i);
+
+char pasarAMayus(char letra);
+
+char verificarEdad(EPersona inicio[],int i);
+
+char validarDNI(EPersona inicio[],int i);
 
 #endif // FUNCIONES_H_INCLUDED

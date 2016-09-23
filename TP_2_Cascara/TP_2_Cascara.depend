@@ -11,3 +11,20 @@
 	<stdlib.h>
 	"funciones.h"
 
+1474596324 source:c:\users\nicolas\desktop\programacion_1\tp_2_cascara\funciones.c
+	"funciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1474594512 c:\users\nicolas\desktop\programacion_1\tp_2_cascara\funciones.h
+	<stdio.h>
+	<stdlib.h>
+
+1474592011 source:c:\users\nicolas\desktop\programacion_1\tp_2_cascara\main.c
+	<stdio.h>
+	<ctype.h>
+	<stdlib.h>
+	"funciones.h"
+
