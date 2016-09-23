@@ -56,4 +56,6 @@ char verificarEdad(EPersona inicio[],int i);
 
 char validarDNI(EPersona inicio[],int i);
 
+int funcionMenu (int opcion);
+
 #endif // FUNCIONES_H_INCLUDED

@@ -10,6 +10,18 @@
 #define BAJA -1
 #define VECTOR 5
 
+
+int funcionMenu (int opcion){
+        printf("1- Agregar persona\n2- Borrar persona\n3- Imprimir lista ordenada por  nombre\n4- Imprimir grafico de edades\n\n5- Salir\n");
+        scanf("%d",&opcion);
+        if(opcion < 0 || opcion > 5){
+            printf("Esa opcion no es valida, vuelva a ingresarla\n");
+            fflush(stdin);
+            scanf("%d",&opcion);
+        }
+        return opcion;
+}
+
 char vLargoDeString(EPersona inicio[],int i){
 
     int aux;
@@ -44,10 +56,7 @@ char validarDNI(EPersona inicio[],int i){
     if(inicio[i].dni<1000000 || inicio[i].dni>99999999){
          retorno = 'n';
          return retorno;
-    }/*else{
-    retorno = 's';
-    return retorno;
-    }*/
+    }
 }
 
 void iniciarVector (EPersona inicio[]){
